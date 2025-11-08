@@ -13,9 +13,10 @@ ol {
   background: #ffffff;
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
-}
+  }
+  
 /* Main content */
 .main-content {
   width: 100%;
@@ -220,11 +221,9 @@ color: #595959;
 .work-experience-container{
 margin-bottom: 12px ;
 }
-
 .education-container{
 margin-top: 40px;
 }
-
 .education-title{
 font-weight: 700;
 font-size: 22px;
@@ -251,3 +250,61 @@ color: #a8a8a8;
 .education-period-separator{
 color: #000;  
 }
+@media screen and (max-width: 960px) {
+  body {
+  padding: 20px 20px 20px 20px;
+  }
+
+  .main-content {
+  padding: 40px;
+   }
+  }
+@media screen and (max-width: 800px) {
+  .sidebar {
+   width: 250px;
+  }
+
+  .my-photo {
+   width: 250px;
+   }
+
+  .sidebar-content {
+   padding: 20px;
+  }
+    }
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  .sidebar {
+   width: 200px;
+  }
+
+   .my-photo {
+   width: 200px;
+   }
+
+  .main-content {
+    padding: 20px;
+   }
+
+  .my-name {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .wrapper {
+  flex-direction: column;
+   }
+
+   .sidebar {
+   width: 100%;
+  }
+
+   .my-photo {
+   width: 100%;
+   }
+  }
+
+
